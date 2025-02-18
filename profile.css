@@ -22,7 +22,8 @@
 
 .box-container{
     width: 20%;
-    height: 50vh;
+    min-height: 50vh;
+    height: auto;
     background-color: azure;
     display: flex;
     flex-direction: column;
@@ -58,11 +59,14 @@ img{
 
 .project{
     width: 30%;
-    height: 40vh;
+    min-height: 50vh;
+    height: auto;
     background-color: aliceblue;
     display: block;
     justify-items: center;
     align-content: center;
+    border-radius: 10px;
+    border: 2px solid black;
 }
 
 .head{
@@ -75,4 +79,105 @@ img{
     width: 80%;
     text-align: center;
     padding-top: 0.5em;
+}
+
+.myContainer{
+    width: 80%;
+    min-height: 37vh;
+    height: auto;
+    background-color: aliceblue;
+    margin-top: 2em;
+    justify-self: center;
+    display: block;
+    justify-items: center;
+}
+
+.project-title{
+    padding-top: 2em;
+    font-weight: 600;
+}
+
+.project-description{
+    text-align: center;
+    width: 70%;
+    margin-top: 2em;
+}
+
+.rate-head{
+    margin-top: 2em;
+    justify-self: center;
+    font-size: 1.3rem;
+}
+
+.rating-container{
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+button{
+    border: none;
+    background-color: #DD3833;
+    color: white;
+    height: 5.5vh;
+    width: 10%;
+}
+
+button:hover{
+    color: #DD3833;
+    background-color: white;
+    border: 2px solid #DD3833;
+    transition: 0.25s ease-in-out;
+    font-weight: bolder;
+}
+
+@media only screen and (max-width: 1000px){
+    .project-containers{
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+    }
+
+    .project{
+        width: 50%;
+    }
+
+    .myContainer{
+        padding-bottom: 2em;
+    }
+
+    #expand{
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .project-containers{
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+    }
+
+    .project{
+        width: 90%;
+    }
+
+    .box-containers{
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+    }
+
+    .box-container{
+        width: 40%;
+    }
+
+    .box{
+        height: 40vh;
+    }
+
+    .myContainer{
+        padding-bottom: 2em;
+    }
 }
