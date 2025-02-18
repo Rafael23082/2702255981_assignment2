@@ -2,41 +2,117 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Poppins", serif;
 }
 
-.navbar{
-    height: 15vh;
-    box-shadow: 0px 0px 5px rgba(0,0,0,0.8);
-    display: flex;
-    top: 0;
-    z-index: 100;
-    position: sticky;
-}
-
-.left-navbar{
-    width: 40%;
-    align-items: center;
-    display: flex;
-}
-
-.logo{
-    width: 30px;
-    margin-left: 5em;
-}
-
-.logo-name{
-    font-family: "Raleway";
-    font-weight: bolder;
+.container{
+    width: 100%;
+    height: 20vh;
+    display: block;
+    justify-items: center;
+    align-content: center;
     font-size: 1.3rem;
-    padding-left: 0.5em;
 }
 
-.right-navbar{
-    width: 60%;
-    display:flex;
+.box-containers{
+    width: 100%;
+    display: flex;
     justify-content: space-evenly;
+}
+
+.box-container{
+    width: 20%;
+    min-height: 50vh;
+    height: auto;
+    background-color: azure;
+    display: flex;
+    flex-direction: column;
+}
+
+.box{
+    width: 100%;
+    height: 30vh;
+    overflow: hidden;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.info{
+    width: 100%;
+    height: 20vh;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    font-family: "Kanit", serif;
+}
+
+.project-containers{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.project{
+    width: 30%;
+    min-height: 50vh;
+    height: auto;
+    background-color: aliceblue;
+    display: block;
+    justify-items: center;
+    align-content: center;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.head{
+    font-weight: bold;
+    text-align: center;
+    width: 80%;
+}
+
+.description{
+    width: 80%;
+    text-align: center;
+    padding-top: 0.5em;
+}
+
+.myContainer{
+    width: 80%;
+    min-height: 37vh;
+    height: auto;
+    background-color: aliceblue;
+    margin-top: 2em;
+    justify-self: center;
+    display: block;
+    justify-items: center;
+}
+
+.project-title{
+    padding-top: 2em;
+    font-weight: 600;
+}
+
+.project-description{
+    text-align: center;
+    width: 70%;
+    margin-top: 2em;
+}
+
+.rate-head{
+    margin-top: 2em;
+    justify-self: center;
+    font-size: 1.3rem;
+}
+
+.rating-container{
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 button{
@@ -45,7 +121,6 @@ button{
     color: white;
     height: 5.5vh;
     width: 10%;
-    min-width: 70px;
 }
 
 button:hover{
@@ -56,123 +131,85 @@ button:hover{
     font-weight: bolder;
 }
 
-.dashboard{
-    font-family: "Kanit", serif;
-    font-weight:500;
-    font-size: 1.7rem;
+.view{
+    min-width: 70px;
+    height: 7vh;
+    margin: 1em;
 }
 
-#date{
-    font-size: 0.9rem;
-    color: #7D7979;
+.hidden{
+    list-style: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
 }
 
-.welcome-message{
-    font-family: "Poppins", serif;
-    padding-top: 1em;
-    font-size: 0.9rem;
+.visible{
+    max-height: 200px;
 }
 
-.texts-container{
-    width: 80%;
-    justify-self: center;
-    display: flex;
-    margin-top: 3em;
+a{
+    text-decoration: none;
+    color: inherit;
 }
 
-.left-texts{
-    width: 50%;
-}
-
-.right-texts{
-    width: 50%;
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 5em;
-}
-
-.box-container{
-    width: 65%;
-    height: 50vh;
-    justify-self: center;
-    margin-top: 2em;
-    display: flex;
-    gap: 3em;
-}
-
-.box-container-left{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 1.3em;
-}
-
-.box-left{
-    background-color: #DD3833;
-    width: 100%;
-    height: 50vh;
-    border-radius: 20px;
-    justify-items: center;
-    align-content: center;
-}
-
-.box-head{
-    font-family: "Kanit", serif;
-    color: white;
-    font-weight:600;
-}
-
-.box-no{
-    color: white;
-    font-weight: bolder;
-    font-family: "Kanit", serif;
-    font-size: 3.3rem;
-}
-
-.box-sub{
-    color: white;
-    font-family: "Kanit", serif;
-    margin-top: -1em;
-    font-size: 0.8rem;
-}
-
-.box-container-right{
-    width: 50%;
-    background-color: #DD3833;
-    border-radius: 20px;
-    justify-items: center;
-    align-content: center;
-}
-
-.box-head-right{
-    font-family: "Kanit", serif;
-    color: white;
-    font-weight:600;
-    font-size: 1.3rem;
-    text-align: center;
-    width: 80%;
-}
-
-.box-no-right{
-    color: white;
-    font-weight: bolder;
-    font-family: "Kanit", serif;
-    font-size: 3.3rem;
-    padding-top: 0.3em;
-}
-
-.box-sub-right{
-    color: white;
-    font-family: "Kanit", serif;
-    margin-top: 1em;
-    font-size: 0.8rem;
-}
-
-.home, .competitions, .help{
-    cursor: pointer;
+a:hover{
+    color: #DD3833;
     transition: 0.25s ease-in-out;
 }
 
-.home:hover, .competitions:hover, .help:hover{
-    font-weight: bolder;
+.rate-head{
+    padding-bottom: 2em;
+}
+
+
+@media only screen and (max-width: 1000px){
+    .project-containers{
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+    }
+
+    .project{
+        width: 50%;
+    }
+
+    .myContainer{
+        padding-bottom: 2em;
+    }
+
+    #expand{
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .project-containers{
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+    }
+
+    .project{
+        width: 90%;
+    }
+
+    .box-containers{
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+    }
+
+    .box-container{
+        width: 40%;
+    }
+
+    .box{
+        height: 40vh;
+    }
+
+    .myContainer{
+        padding-bottom: 2em;
+    }
 }
