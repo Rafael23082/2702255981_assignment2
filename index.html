@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Forum&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Final Project Homepage</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="left-navbar">
+            <img src="logo.png" class="logo">
+            <div class="logo-name">NMC</div>
+        </div>
+        <div class="right-navbar">
+            <div class="home">HOME</div>
+            <div class="competitions">COMPETITIONS</div>
+            <div class="help">HELP</div>    
+            <button class="logout-btn">LOGOUT</button>
+        </div>
+    </div>  
+
+    <div class="texts-container">
+        <div class="left-texts">
+            <div class="dashboard">Dashboard</div>
+            <div id="date"></div>
+            <div class="welcome-message">Welcome Back, Santoso!</div>
+        </div>
+        <div class="right-texts">
+            <button class="profile-btn" onclick="window.location.href='profile.html'">My Profile</button>
+        </div>
+    </div>
+
+    <div class="box-container">
+        <div class="box-container-left">
+            <div class="box-left">
+                <div class="box-head">Competitions Participated</div>
+                <div class="box-no">5</div>
+                <div class="box-sub">All Time</div>
+            </div>
+            <div class="box-left">
+                <div class="box-head">Competitions Won</div>
+                <div class="box-no">2</div>
+                <div class="box-sub">All Time</div>
+            </div>
+        </div>
+        <div class="box-container-right">
+            <div class="box-head-right">Upcoming Registered Competitions</div>
+            <div class="box-no-right">3</div>
+            <div class="box-sub-right">Competition(s)</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
