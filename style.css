@@ -167,3 +167,12 @@ button:hover{
     margin-top: 1em;
     font-size: 0.8rem;
 }
+
+.home, .competitions, .help{
+    cursor: pointer;
+    transition: 0.25s ease-in-out;
+}
+
+.home:hover, .competitions:hover, .help:hover{
+    font-weight: bolder;
+}
